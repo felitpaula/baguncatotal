@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Cardapio</title>
+
+        <script src="classes.js" defer></script>
+        <script src="adicionarProduto.js" defer></script>
+    </head>
+    <body>
+        <div class="row mb-2">
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Nome" id="nome-produto" />
+            </div>
+
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Descrição" id="descricao-produto" />
+            </div>
+
+            <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Preço" id="preco-produto" />
+            </div>
+
+            <div class="col-md-3">
+                <select class="form-control" id="categoria-produto">
+                <option value="">Categoria</option>
+                <option value="Alimentação">Alimentação</option>
+                <option value="Calçado">Calçado</option>
+                <option value="Decoração">Decoração</option>
+                <option value="Entretenimento">Entretenimento</option>
+                <option value="Hobbies">Hobbies</option>
+                <option value="Mobília">Mobília</option>
+                <option value="Papelaria">Papelaria</option>
+                <option value="Tecnologia">Tecnologia</option>
+                <option value="Utensílio">Utensílio</option>
+                <option value="Vestuário">Vestuário</option>
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <input
+                    type="file"
+                    class="form-control"
+                    id="imagem-produto"
+                    accept="image/*"
+                />
+            </div>
+
+            <div class="col-md-2 d-flex justify-content-end">
+                <button type="button" class="btn btn-primary" id="btnAdicionar" aria-label="Adicionar produto ao cardápio">
+                    Adicionar
+                <i class="fas fa-plus"></i>
+                </button>
+            </div>
+            </div>
+    </body>
+</html>

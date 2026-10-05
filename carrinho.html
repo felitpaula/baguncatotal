@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Carrinho</title>
+
+        <script src="classes.js" defer></script>
+        <script src="carrinho.js" defer></script>
+    </head>
+    <body>
+        <div id="carrinho-container"></div>
+        <h4><span id="subtotal"></span></h4>
+        <div class="col-md-3">
+            <select class="form-control" id="tipo-entrega">
+                <option value="Retirada">Retirada</option>
+                <option value="Delivery">Delivery</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Nome cliente" id="nome-cliente" />
+        </div>
+        <h4><span id="total"></span></h4>
+        <button type="button" class="btn btn-primary" id="btnFecharPedido" aria-label="Fechar pedido">
+                    Fechar Pedido
+                <i class="fas fa-plus"></i>
+                </button>
+    </body>
+</html>
